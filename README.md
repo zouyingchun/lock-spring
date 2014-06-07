@@ -22,7 +22,7 @@ lock-spring 解决了分布式系统下同步以及加锁的问题。通过zooke
     <lock:annotation-driven />
 </beans>`
 
-3.lockManager config
+3. lockManager config
 >`	<bean id="curatorConnectionFactory"
 		class="org.lock.spring.data.zookeeper.connection.CuratorConnectionFactory">
 		<property name="host" value="127.0.0.1"></property>
@@ -38,7 +38,7 @@ lock-spring 解决了分布式系统下同步以及加锁的问题。通过zooke
 		<property name="pool" ref="genericObjectPool"></property>
 	</bean>`
 	
-4.annontation config
+4. annontation config
 ```java
 @Lock(name="test",lockTime=60000)
 public void testLock() {
@@ -52,7 +52,7 @@ public void testLock() {
 	logger.debug("end to test lock");
 }
 ```
-5.使用范例：
+5. 使用范例：
     更加具体的使用方法请参考lock-example的使用。
 
 
