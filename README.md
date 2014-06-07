@@ -6,7 +6,7 @@ lock-spring 解决了分布式系统下同步以及加锁的问题。通过zooke
  1. 下载source
     下载[lock-spring.jar](https://github.com/zouyingchun/lock-spring/blob/developer/lib/lock-spring-1.0.0.jar)
  2. 配置注解
-   > `<beans xmlns="http://www.springframework.org/schema/beans"
+   >`		<beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:jee="http://www.springframework.org/schema/jee" xmlns:jdbc="http://www.springframework.org/schema/jdbc"
 	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop"
