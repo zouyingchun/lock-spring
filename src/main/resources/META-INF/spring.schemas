@@ -1,1 +1,1 @@
-http\://www.springframework.org/schema/lock/spring-lock.xsd=META-INF/lock.xsd
+http\://www.lock.org/schema/lock/lock-spring.xsd=META-INF/lock.xsd
