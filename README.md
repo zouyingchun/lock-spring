@@ -35,19 +35,19 @@ http://www.lock.org/schema/lock http://www.lock.org/schema/lock/lock-spring.xsd"
 	</bean>`
 	
  4. annontation config
-```java
-@Lock(name="test",lockTime=60000)
-public void testLock() {
-	logger.debug("start to test lock");
-	
-	try {
-		Thread.sleep(10000);
-	} catch (InterruptedException e) {
-		logger.info(e.getMessage(),e);
-	}
-	logger.debug("end to test lock");
-}
-```
+    ```java
+    @Lock(name="test",lockTime=60000)
+    public void testLock() {
+    	logger.debug("start to test lock");
+    	
+    	try {
+    		Thread.sleep(10000);
+    	} catch (InterruptedException e) {
+    		logger.info(e.getMessage(),e);
+    	}
+    	logger.debug("end to test lock");
+    }
+    ```
  5. use example：
     更加具体的使用方法请参考lock-example的使用。
 
