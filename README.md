@@ -1,8 +1,9 @@
 lock-spring 解决了分布式系统下同步以及加锁的问题。通过zookeeper+curator进行资源锁控制.以及通过annotation+spring方式去实现使使用更加方便。
 
  1. 下载source
-    下载[lock-spring.jar](https://github.com/zouyingchun/lock-spring/blob/developer/lib/lock-spring-1.0.0.jar)
- 2. 下载source
+    >下载[lock-spring.jar](https://github.com/zouyingchun/lock-spring/blob/developer/lib/lock-spring-1.0.0.jar)
+
+ 2. spring annotation配置
 >`	<beans xmlns="http://www.springframework.org/schema/beans" 
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context" 
 xmlns:jee="http://www.springframework.org/schema/jee" xmlns:jdbc="http://www.springframework.org/schema/jdbc" 
@@ -18,6 +19,7 @@ http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
 http://www.lock.org/schema/lock http://www.lock.org/schema/lock/lock-spring.xsd"> 
 <lock:annotation-driven /> 
 </beans>`
+
  3. lockManager config
 >`	<bean id="curatorConnectionFactory"
 		class="org.lock.spring.data.zookeeper.connection.CuratorConnectionFactory">
